@@ -1,0 +1,52 @@
+Feb 01 09:29:24.183 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Feb 01 09:29:24.185 HYPERVISOR: Started on IP = localhost, TCP port = 63201.
+Feb 01 09:29:24.624 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 01 09:29:24.625 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\pedro\Desktop\ProjetoAGR\project-files\dynamips 
+Feb 01 09:29:24.626 GENERAL: working_dir=C:\Users\pedro\Desktop\ProjetoAGR\project-files\dynamips
+Feb 01 09:29:24.627 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\pedro\Desktop\ProjetoAGR\project-files\dynamips\d7032b3a-90dc-4240-88db-bbb2f4f4f471 
+Feb 01 09:29:24.661 GENERAL: working_dir=C:\Users\pedro\Desktop\ProjetoAGR\project-files\dynamips\d7032b3a-90dc-4240-88db-bbb2f4f4f471
+Feb 01 09:29:24.662 HYPERVISOR: exec_cmd: vm create Madrid 6 c7200 
+Feb 01 09:29:24.668 VM: VM Madrid created.
+Feb 01 09:29:24.669 HYPERVISOR: exec_cmd: vm set_con_tcp_port Madrid 5007 
+Feb 01 09:29:24.669 HYPERVISOR: exec_cmd: c7200 get_mac_addr Madrid 
+Feb 01 09:29:24.671 HYPERVISOR: exec_cmd: vm get_status Madrid 
+Feb 01 09:29:24.672 HYPERVISOR: exec_cmd: vm slot_add_binding Madrid 0 0 C7200-IO-FE 
+Feb 01 09:29:24.673 HYPERVISOR: exec_cmd: vm set_disk0 Madrid 0 
+Feb 01 09:29:24.674 HYPERVISOR: exec_cmd: vm set_exec_area Madrid 64 
+Feb 01 09:29:24.678 HYPERVISOR: exec_cmd: vm set_ios Madrid C:/Users/pedro/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Feb 01 09:29:24.679 HYPERVISOR: exec_cmd: c7200 set_mac_addr Madrid ca06.4730.0000 
+Feb 01 09:29:24.680 HYPERVISOR: exec_cmd: vm set_nvram Madrid 512 
+Feb 01 09:29:24.682 HYPERVISOR: exec_cmd: vm set_ram Madrid 512 
+Feb 01 09:29:24.683 HYPERVISOR: exec_cmd: vm get_status Madrid 
+Feb 01 09:29:24.684 HYPERVISOR: exec_cmd: vm slot_add_binding Madrid 1 0 PA-FE-TX 
+Feb 01 09:29:24.685 HYPERVISOR: exec_cmd: vm get_status Madrid 
+Feb 01 09:29:24.686 HYPERVISOR: exec_cmd: vm slot_add_binding Madrid 2 0 PA-2FE-TX 
+Feb 01 09:29:28.305 HYPERVISOR: exec_cmd: nio create_udp udp-fbad78b6-4320-4c84-9fc4-cc4fbc89e847 10036 127.0.0.1 10037 
+Feb 01 09:29:28.565 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Madrid 2 0 udp-fbad78b6-4320-4c84-9fc4-cc4fbc89e847 
+Feb 01 09:29:28.565 HYPERVISOR: exec_cmd: vm get_status Madrid 
+Feb 01 09:29:28.786 HYPERVISOR: exec_cmd: nio create_udp udp-924d55cc-6a10-4a9d-8916-f4f5394ba6c5 10042 127.0.0.1 10043 
+Feb 01 09:29:28.793 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Madrid 2 1 udp-924d55cc-6a10-4a9d-8916-f4f5394ba6c5 
+Feb 01 09:29:28.794 HYPERVISOR: exec_cmd: vm get_status Madrid 
+Feb 01 09:29:29.016 HYPERVISOR: exec_cmd: nio create_udp udp-71bd9c1b-b91e-438a-b568-b5b8c80f0491 10048 127.0.0.1 10049 
+Feb 01 09:29:29.023 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Madrid 1 0 udp-71bd9c1b-b91e-438a-b568-b5b8c80f0491 
+Feb 01 09:29:29.024 HYPERVISOR: exec_cmd: vm get_status Madrid 
+Feb 01 09:29:29.151 HYPERVISOR: exec_cmd: nio create_udp udp-07185a7a-201e-41f7-86c1-cdffd0d99dcb 10052 127.0.0.1 10053 
+Feb 01 09:29:29.155 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Madrid 0 0 udp-07185a7a-201e-41f7-86c1-cdffd0d99dcb 
+Feb 01 09:29:29.156 HYPERVISOR: exec_cmd: vm get_status Madrid 
+Feb 01 09:30:01.752 HYPERVISOR: exec_cmd: vm set_ghost_status Madrid 2 
+Feb 01 09:30:01.752 HYPERVISOR: exec_cmd: vm set_ghost_file Madrid C:\Users\pedro\Desktop\ProjetoAGR\project-files\dynamips\c7200-jk9o3s-mz.123-8.T.bin-512.ghost 
+Feb 01 09:30:01.753 HYPERVISOR: exec_cmd: vm get_status Madrid 
+Feb 01 09:30:01.753 HYPERVISOR: exec_cmd: vm set_config Madrid configs\i6_startup-config.cfg 
+Feb 01 09:30:01.754 HYPERVISOR: exec_cmd: vm start Madrid 
+Feb 01 09:30:32.063 HYPERVISOR: exec_cmd: vm extract_config Madrid 
+Feb 01 09:32:51.880 HYPERVISOR: exec_cmd: vm get_status Madrid 
+Feb 01 09:32:51.880 HYPERVISOR: exec_cmd: vm stop Madrid 
+Feb 01 09:32:52.124 VM: VM Madrid shutdown.
+Feb 01 09:32:52.127 HYPERVISOR: exec_cmd: vm extract_config Madrid 
+Feb 01 09:32:52.523 HYPERVISOR: exec_cmd: vm get_status Madrid 
+Feb 01 09:32:52.524 HYPERVISOR: exec_cmd: vm extract_config Madrid 
+Feb 01 09:32:52.529 HYPERVISOR: exec_cmd: vm delete Madrid 
+Feb 01 09:32:52.529 VM: VM Madrid destroyed.
+Feb 01 09:32:52.532 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 01 09:32:52.748 HYPERVISOR: Stopped.
+Feb 01 09:32:52.749 GENERAL: reset done.

@@ -1,0 +1,50 @@
+Feb 01 00:09:06.181 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Feb 01 00:09:06.182 HYPERVISOR: Started on IP = localhost, TCP port = 64252.
+Feb 01 00:09:06.230 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 01 00:09:06.230 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\pedro\Desktop\ProjetoAGR\project-files\dynamips 
+Feb 01 00:09:06.234 GENERAL: working_dir=C:\Users\pedro\Desktop\ProjetoAGR\project-files\dynamips
+Feb 01 00:09:06.234 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\pedro\Desktop\ProjetoAGR\project-files\dynamips\633c7277-d5e0-4f37-a203-a7fa8a7144e3 
+Feb 01 00:09:06.235 GENERAL: working_dir=C:\Users\pedro\Desktop\ProjetoAGR\project-files\dynamips\633c7277-d5e0-4f37-a203-a7fa8a7144e3
+Feb 01 00:09:06.235 HYPERVISOR: exec_cmd: vm create Roma 1 c7200 
+Feb 01 00:09:06.237 VM: VM Roma created.
+Feb 01 00:09:06.237 HYPERVISOR: exec_cmd: vm set_con_tcp_port Roma 5005 
+Feb 01 00:09:06.238 HYPERVISOR: exec_cmd: c7200 get_mac_addr Roma 
+Feb 01 00:09:06.238 HYPERVISOR: exec_cmd: vm get_status Roma 
+Feb 01 00:09:06.238 HYPERVISOR: exec_cmd: vm slot_add_binding Roma 0 0 C7200-IO-FE 
+Feb 01 00:09:06.239 HYPERVISOR: exec_cmd: vm set_disk0 Roma 0 
+Feb 01 00:09:06.239 HYPERVISOR: exec_cmd: vm set_exec_area Roma 64 
+Feb 01 00:09:06.241 HYPERVISOR: exec_cmd: vm set_ios Roma C:/Users/pedro/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Feb 01 00:09:06.241 HYPERVISOR: exec_cmd: c7200 set_mac_addr Roma ca01.3260.0000 
+Feb 01 00:09:06.242 HYPERVISOR: exec_cmd: vm set_nvram Roma 512 
+Feb 01 00:09:06.242 HYPERVISOR: exec_cmd: vm set_ram Roma 512 
+Feb 01 00:09:06.243 HYPERVISOR: exec_cmd: vm get_status Roma 
+Feb 01 00:09:06.243 HYPERVISOR: exec_cmd: vm slot_add_binding Roma 1 0 PA-FE-TX 
+Feb 01 00:09:06.244 HYPERVISOR: exec_cmd: vm get_status Roma 
+Feb 01 00:09:06.244 HYPERVISOR: exec_cmd: vm slot_add_binding Roma 2 0 PA-2FE-TX 
+Feb 01 00:09:09.839 HYPERVISOR: exec_cmd: nio create_udp udp-921714d6-e988-429a-9d6b-47e0f5e7d031 10002 127.0.0.1 10003 
+Feb 01 00:09:10.106 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Roma 0 0 udp-921714d6-e988-429a-9d6b-47e0f5e7d031 
+Feb 01 00:09:10.106 HYPERVISOR: exec_cmd: vm get_status Roma 
+Feb 01 00:09:10.184 HYPERVISOR: exec_cmd: nio create_udp udp-a5f2c24d-97a4-4c35-83d5-73a6a4e1e137 10006 127.0.0.1 10007 
+Feb 01 00:09:10.188 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Roma 1 0 udp-a5f2c24d-97a4-4c35-83d5-73a6a4e1e137 
+Feb 01 00:09:10.188 HYPERVISOR: exec_cmd: vm get_status Roma 
+Feb 01 00:09:10.617 HYPERVISOR: exec_cmd: nio create_udp udp-3dd85145-cbe5-440c-87f2-1a79b4848954 10016 127.0.0.1 10017 
+Feb 01 00:09:10.620 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Roma 2 0 udp-3dd85145-cbe5-440c-87f2-1a79b4848954 
+Feb 01 00:09:10.620 HYPERVISOR: exec_cmd: vm get_status Roma 
+Feb 01 00:09:12.356 HYPERVISOR: exec_cmd: nio create_udp udp-9e852a91-84ff-4824-893a-9d869b386b32 10054 127.0.0.1 10055 
+Feb 01 00:09:12.359 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Roma 2 1 udp-9e852a91-84ff-4824-893a-9d869b386b32 
+Feb 01 00:09:12.359 HYPERVISOR: exec_cmd: vm get_status Roma 
+Feb 01 00:10:10.885 HYPERVISOR: exec_cmd: vm set_ghost_status Roma 2 
+Feb 01 00:10:10.886 HYPERVISOR: exec_cmd: vm set_ghost_file Roma C:\Users\pedro\Desktop\ProjetoAGR\project-files\dynamips\c7200-jk9o3s-mz.123-8.T.bin-512.ghost 
+Feb 01 00:10:10.886 HYPERVISOR: exec_cmd: vm get_status Roma 
+Feb 01 00:10:10.887 HYPERVISOR: exec_cmd: vm set_config Roma configs\i1_startup-config.cfg 
+Feb 01 00:10:10.887 HYPERVISOR: exec_cmd: vm start Roma 
+Feb 01 00:10:41.244 HYPERVISOR: exec_cmd: vm extract_config Roma 
+Feb 01 00:21:12.300 HYPERVISOR: exec_cmd: vm get_status Roma 
+Feb 01 00:21:12.302 HYPERVISOR: exec_cmd: vm stop Roma 
+Feb 01 00:21:12.467 VM: VM Roma shutdown.
+Feb 01 00:21:12.468 HYPERVISOR: exec_cmd: vm extract_config Roma 
+Feb 01 00:22:01.859 HYPERVISOR: exec_cmd: vm get_status Roma 
+Feb 01 00:22:01.860 HYPERVISOR: exec_cmd: vm extract_config Roma 
+Feb 01 00:22:12.893 HYPERVISOR: Stopped.
+Feb 01 00:22:12.894 VM: VM Roma destroyed.
+Feb 01 00:22:12.923 GENERAL: reset done.

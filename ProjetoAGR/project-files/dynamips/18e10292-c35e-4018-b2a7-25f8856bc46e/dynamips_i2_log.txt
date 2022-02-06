@@ -1,0 +1,65 @@
+Feb 01 00:09:06.352 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Feb 01 00:09:06.353 HYPERVISOR: Started on IP = localhost, TCP port = 64258.
+Feb 01 00:09:06.825 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 01 00:09:06.825 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\pedro\Desktop\ProjetoAGR\project-files\dynamips 
+Feb 01 00:09:06.825 GENERAL: working_dir=C:\Users\pedro\Desktop\ProjetoAGR\project-files\dynamips
+Feb 01 00:09:06.826 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\pedro\Desktop\ProjetoAGR\project-files\dynamips\18e10292-c35e-4018-b2a7-25f8856bc46e 
+Feb 01 00:09:06.837 GENERAL: working_dir=C:\Users\pedro\Desktop\ProjetoAGR\project-files\dynamips\18e10292-c35e-4018-b2a7-25f8856bc46e
+Feb 01 00:09:06.837 HYPERVISOR: exec_cmd: vm create Oporto 2 c7200 
+Feb 01 00:09:06.839 VM: VM Oporto created.
+Feb 01 00:09:06.839 HYPERVISOR: exec_cmd: vm set_con_tcp_port Oporto 5008 
+Feb 01 00:09:06.840 HYPERVISOR: exec_cmd: c7200 get_mac_addr Oporto 
+Feb 01 00:09:06.840 HYPERVISOR: exec_cmd: vm get_status Oporto 
+Feb 01 00:09:06.840 HYPERVISOR: exec_cmd: vm slot_add_binding Oporto 0 0 C7200-IO-FE 
+Feb 01 00:09:06.841 HYPERVISOR: exec_cmd: vm set_disk0 Oporto 0 
+Feb 01 00:09:06.841 HYPERVISOR: exec_cmd: vm set_exec_area Oporto 64 
+Feb 01 00:09:06.842 HYPERVISOR: exec_cmd: vm set_ios Oporto C:/Users/pedro/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Feb 01 00:09:06.843 HYPERVISOR: exec_cmd: c7200 set_mac_addr Oporto ca02.04cc.0000 
+Feb 01 00:09:06.843 HYPERVISOR: exec_cmd: vm set_nvram Oporto 512 
+Feb 01 00:09:06.844 HYPERVISOR: exec_cmd: vm set_ram Oporto 512 
+Feb 01 00:09:06.844 HYPERVISOR: exec_cmd: vm get_status Oporto 
+Feb 01 00:09:06.844 HYPERVISOR: exec_cmd: vm slot_add_binding Oporto 1 0 PA-FE-TX 
+Feb 01 00:09:06.845 HYPERVISOR: exec_cmd: vm get_status Oporto 
+Feb 01 00:09:06.845 HYPERVISOR: exec_cmd: vm slot_add_binding Oporto 2 0 PA-2FE-TX 
+Feb 01 00:09:10.200 HYPERVISOR: exec_cmd: nio create_udp udp-08262d37-2d32-42a6-9176-d07a7feac416 10008 127.0.0.1 10009 
+Feb 01 00:09:10.469 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Oporto 1 0 udp-08262d37-2d32-42a6-9176-d07a7feac416 
+Feb 01 00:09:10.471 HYPERVISOR: exec_cmd: vm get_status Oporto 
+Feb 01 00:09:10.536 HYPERVISOR: exec_cmd: nio create_udp udp-b1b730bd-0f57-4bfb-8463-bed5d27912ea 10012 127.0.0.1 10013 
+Feb 01 00:09:10.549 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Oporto 0 0 udp-b1b730bd-0f57-4bfb-8463-bed5d27912ea 
+Feb 01 00:09:10.550 HYPERVISOR: exec_cmd: vm get_status Oporto 
+Feb 01 00:09:11.042 HYPERVISOR: exec_cmd: nio create_udp udp-eafce0a6-8d55-4204-8250-3acd999737ae 10026 127.0.0.1 10027 
+Feb 01 00:09:11.045 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Oporto 2 1 udp-eafce0a6-8d55-4204-8250-3acd999737ae 
+Feb 01 00:09:11.045 HYPERVISOR: exec_cmd: vm get_status Oporto 
+Feb 01 00:09:12.018 HYPERVISOR: exec_cmd: nio create_udp udp-43dec94f-59bb-4ffd-8a48-a80873102055 10048 127.0.0.1 10049 
+Feb 01 00:09:12.021 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Oporto 2 0 udp-43dec94f-59bb-4ffd-8a48-a80873102055 
+Feb 01 00:09:12.022 HYPERVISOR: exec_cmd: vm get_status Oporto 
+Feb 01 00:10:10.351 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Feb 01 00:10:10.353 VM: VM Ghost created.
+Feb 01 00:10:10.353 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/pedro/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Feb 01 00:10:10.354 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Feb 01 00:10:10.354 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\pedro\Desktop\ProjetoAGR\project-files\dynamips\c7200-jk9o3s-mz.123-8.T.bin-512.ghost 
+Feb 01 00:10:10.355 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Feb 01 00:10:10.356 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 01 00:10:10.356 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Feb 01 00:10:10.357 HYPERVISOR: exec_cmd: vm start Ghost 
+Feb 01 00:10:10.715 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 01 00:10:10.716 HYPERVISOR: exec_cmd: vm stop Ghost 
+Feb 01 00:10:10.874 VM: VM Ghost shutdown.
+Feb 01 00:10:10.875 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Feb 01 00:10:10.876 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Feb 01 00:10:10.876 VM: VM Ghost destroyed.
+Feb 01 00:10:10.884 HYPERVISOR: exec_cmd: vm set_ghost_status Oporto 2 
+Feb 01 00:10:10.885 HYPERVISOR: exec_cmd: vm set_ghost_file Oporto C:\Users\pedro\Desktop\ProjetoAGR\project-files\dynamips\c7200-jk9o3s-mz.123-8.T.bin-512.ghost 
+Feb 01 00:10:10.885 HYPERVISOR: exec_cmd: vm get_status Oporto 
+Feb 01 00:10:10.886 HYPERVISOR: exec_cmd: vm set_config Oporto configs\i2_startup-config.cfg 
+Feb 01 00:10:10.886 HYPERVISOR: exec_cmd: vm start Oporto 
+Feb 01 00:10:41.244 HYPERVISOR: exec_cmd: vm extract_config Oporto 
+Feb 01 00:21:12.300 HYPERVISOR: exec_cmd: vm get_status Oporto 
+Feb 01 00:21:12.301 HYPERVISOR: exec_cmd: vm stop Oporto 
+Feb 01 00:21:12.467 VM: VM Oporto shutdown.
+Feb 01 00:21:12.468 HYPERVISOR: exec_cmd: vm extract_config Oporto 
+Feb 01 00:22:01.860 HYPERVISOR: exec_cmd: vm get_status Oporto 
+Feb 01 00:22:01.861 HYPERVISOR: exec_cmd: vm extract_config Oporto 
+Feb 01 00:22:12.893 HYPERVISOR: Stopped.
+Feb 01 00:22:12.893 VM: VM Oporto destroyed.
+Feb 01 00:22:12.905 GENERAL: reset done.
